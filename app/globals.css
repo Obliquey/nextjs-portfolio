@@ -16,8 +16,9 @@
   }
 }
 
-body {
-}
+/* html, body {
+  min-height: 100vh;
+} */
 
 @layer utilities {
   .text-balance {
