@@ -9,19 +9,17 @@ export default async function Projects() {
     // reaching into GetRepos, which is a function-fetch call to the Github API for the list of my projects.
     const projects = await GetRepos();
     console.log("Here are our projects:", projects);
-    const exampleProjects = [
-        {name: "Momentum", description: "Gamified personal development app built for a client."},
-        {
-            name: "StuMP3d", description: "Music guessing game, perfect for long car rides and testing your friends!"
-        }
-    ]
+
     return (
         <>
-            {exampleProjects.map((item, index) =>{
+            {projects.map((item, index) =>{
                 return (
-                    <div className="min-w-72 h-auto border-2 rounded-md border-white" key={index}>
-                        <p>{item.name}</p>
-                        <p>{item.description}</p>
+                    <div className="size-40 rounded overflow-hidden shadow-lg bg-white text-black shadow-indigo-600" key={index}>
+                        <img className="w-full z-1" src={item.img} alt="Who knows" />
+                        <div className="px-6 py-4 z-10">
+                            <div className="font-bold text-xl mb-2">{item.name}</div>
+                            <p>{item.language}</p>
+                        </div>
                     </div>
                 )
             })}
