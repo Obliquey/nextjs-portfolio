@@ -5,7 +5,7 @@ import Projects from '../components/Projects';
 
 export default function ProjectsPage(){
   return (
-    <div className='flex flex-row  flex-wrap place-content-center mt-50 text-white gap-36'>
+    <div className='flex flex-ro flex-wrap place-content-center mt-50 text-white gap-20 ml-20 mt-10'>
       <Projects />
     </div>
   )
