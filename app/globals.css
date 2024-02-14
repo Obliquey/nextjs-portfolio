@@ -16,12 +16,26 @@
   }
 }
 
+
+/********************
+      GENERAL
+********************/
 html, body {
   min-height: 100vh;
+  overflow: hidden;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   /* vvvv in case I want to do something with a conic gradient */
   /* background-image: conic-gradient(from 36deg at 30% 40%, #cecece 0% 12%, #ffffff 12% 80%); */
 }
+/********************
+    END GENERAL
+********************/
 
+
+
+/********************
+      NAVBAR
+********************/
 #navBar {
   display: flex;
   flex-direction: row;
@@ -36,12 +50,10 @@ html, body {
   border-color: rgb(29, 31, 41);
   transition: top, left, height, width, border-radius, .5s;
 }
-
 #navBar:hover{
   top: 0;
   left: 0;
 }
-
 .navItem{
   color:white;
   padding: 10px;
@@ -53,6 +65,26 @@ html, body {
   font-size: large;
   box-shadow: inset 0px 0px 0px 3px black;
 }
+/********************
+    END NAVBAR
+********************/
+
+
+#nametag{
+  animation-duration: 3s;
+  animation-name: slideup;
+}
+
+@keyframes slideup {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top:0%;
+  }
+  
+}
+
 
 @layer utilities {
   .text-balance {
