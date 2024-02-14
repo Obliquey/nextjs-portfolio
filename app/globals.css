@@ -18,33 +18,40 @@
 
 html, body {
   min-height: 100vh;
+  /* vvvv in case I want to do something with a conic gradient */
+  /* background-image: conic-gradient(from 36deg at 30% 40%, #cecece 0% 12%, #ffffff 12% 80%); */
 }
 
 #navBar {
   display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 200px;
+  flex-direction: row;
+  width: auto;
+  height:50px;
   position: absolute;
-  top: -80px;
-  left: -80px;
-  background: rgb(29, 31, 41);
-  border-radius: 50%;
-  transition: top, left, height, width, border-radius, .4s;
+  top: 0;
+  left: -350px;
+  /* background: rgb(29, 31, 41); */
+  border-width: 2px;
+  /* box-shadow: inset -10px -10px 20px; */
+  border-color: rgb(29, 31, 41);
+  transition: top, left, height, width, border-radius, .5s;
 }
 
 #navBar:hover{
   top: 0;
   left: 0;
-  height: 400px;
-  width: 200px;
-  border-radius: 5px;
 }
 
 .navItem{
-  visibility: hidden;
   color:white;
   padding: 10px;
+  margin-left: 12px;
+  padding-bottom: 5px;
+  transition: font-size .2s;
+}
+.navItem:hover {
+  font-size: large;
+  box-shadow: inset 0px 0px 0px 3px black;
 }
 
 @layer utilities {
