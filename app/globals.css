@@ -20,6 +20,33 @@ html, body {
   min-height: 100vh;
 }
 
+#navBar {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  background: rgb(29, 31, 41);
+  border-radius: 50%;
+  transition: top, left, height, width, border-radius, .4s;
+}
+
+#navBar:hover{
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+.navItem{
+  visibility: hidden;
+  color:white;
+  padding: 10px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

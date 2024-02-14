@@ -10,9 +10,9 @@ export default function Nav() {
 
     return (
         <>
-            <div id="navBar" className="flex flex-col absolute left-0 top-0 h-max bg-stone-800 w-32">
+            <div id="navBar">
                 {navItems.map((item, index) => {
-                    return <Link href={item.path} className="ml-2 text-white text-2xl border-1 p-5 ">{item.name}</Link>;
+                    return <Link href={item.path}  className="navItem">{item.name}</Link>;
                 })}
             </div>
         </>

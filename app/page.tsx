@@ -23,17 +23,17 @@ export default function Home() {
             </div>
             <div id="bio" className="basis-2/5 flex flex-col">
                 <p className="text-white text-3xl place-self-center">
-                  Welcome to my website!
+                  Hey, I'm Anders.
                 </p>
-                <p className="text-white text-xl place-self-center">This is going to be a short bio of who I am, what I love, and the work I do.</p>
+                <p className="text-white text-xl place-self-center"></p>
             </div>
         </div>
 
 
         {/* will need to figure out how best to print projects to the DOM. Will be dependent on how I retrieve that info from Github */}
-        <div id="projects" className="flex flex-row gap-10 place-content-center mt-40">
-          {/* <Projects /> */}
-        </div>
+        {/* <div id="projects" className="flex flex-row gap-10 place-content-center mt-40">
+          <Projects />
+        </div> */}
 
       </main>
   );
