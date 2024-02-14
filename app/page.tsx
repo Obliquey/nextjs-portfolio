@@ -19,21 +19,21 @@ export default function Home() {
       <main className="">
         <div id="parent" className="flex flex-row gap-12 place-content-center mt-10">
             <div id="image" className="basis-1/5">
-                <img src={imgURL} alt="something about coding" />
+                <img src={imgURL} alt="something about coding" className="rounded-lg shadow-lg"/>
             </div>
             <div id="bio" className="basis-2/5 flex flex-col">
                 <p className="text-white text-3xl place-self-center">
-                  Welcome to my website!
+                  Anders Boyum
                 </p>
-                <p className="text-white text-xl place-self-center">This is going to be a short bio of who I am, what I love, and the work I do.</p>
+                <p className="text-white text-xl place-self-center">I'm a software developer </p>
             </div>
         </div>
 
 
         {/* will need to figure out how best to print projects to the DOM. Will be dependent on how I retrieve that info from Github */}
-        <div id="projects" className="flex flex-row gap-10 place-content-center mt-40">
-          {/* <Projects /> */}
-        </div>
+        {/* <div id="projects" className="flex flex-row gap-10 place-content-center mt-40">
+          <Projects />
+        </div> */}
 
       </main>
   );

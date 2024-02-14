@@ -1,19 +1,21 @@
 import Link from "next/link";
+import { TiChevronRightOutline } from "react-icons/ti";
 
 export default function Nav() {
     const navItems = [
-        {name: "Home", path:"/"},
-        {name:"About", path:"/about"},
-        {name:"Projects", path:"/projects"},
-        {name: "Blog", path:"/blog"}
+        {name: "home", path:"/"},
+        {name:"about", path:"/about"},
+        {name:"projects", path:"/projects"},
+        {name: "blog", path:"/blog"}
     ];
 
     return (
         <>
-            <div id="navBar" className="flex flex-col absolute left-0 top-0 h-max bg-stone-800 w-32">
+            <div id="navBar" className="flex-row">
                 {navItems.map((item, index) => {
-                    return <Link href={item.path} className="ml-2 text-white text-2xl border-1 p-5 ">{item.name}</Link>;
+                    return <Link href={item.path}  className="navItem">{item.name}</Link>;
                 })}
+                <TiChevronRightOutline  className="text-white text-3xl m-auto ml-14 mr-2"/>
             </div>
         </>
     )
