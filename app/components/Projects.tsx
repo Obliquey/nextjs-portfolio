@@ -15,16 +15,18 @@ export default async function Projects() {
     return (
         <>
             {projects.map((item, index) =>{
-                return (
-                    <div className="max-w-52 rounded overflow-hidden shadow-lg bg-white text-black shadow-indigo-600" key={index}>
-                        <img className="w-full z-1" src={item.img} alt="Who knows" />
-                        <div className="px-6 py-4 z-10">
-                            <div className="font-bold text-xl mb-2">{item.name}</div>
-                            <p>{item.language}</p>
+                    return (
+                        <div className="max-w-52 rounded overflow-hidden shadow-lg bg-white">
+                            <img className="w-full" src={item.img} alt="Something Else" />
+                            <div className="px-6 py-4 text-black">
+                                <div className="font-bold text-xl mb-2">{item.name}</div>
+                                <p className="text-gray-700 text-base">{item.language}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                )
-            })}
+                    )
+                }
+            )}
         </>
-    )
+        )
 }
