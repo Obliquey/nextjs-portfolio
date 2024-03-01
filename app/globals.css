@@ -71,7 +71,7 @@ html, body {
 
 
 #nametag{
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-name: slideup;
 }
 
@@ -82,7 +82,6 @@ html, body {
   to {
     margin-top:0%;
   }
-  
 }
 
 
