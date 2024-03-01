@@ -47,7 +47,9 @@ html, body {
   /* background: rgb(29, 31, 41); */
   border-width: 2px;
   /* box-shadow: inset -10px -10px 20px; */
-  border-color: rgb(29, 31, 41);
+  border-color: white;
+  border-top: 0;
+  border-left: 0;
   transition: top, left, height, width, border-radius, .5s;
 }
 #navBar:hover{
@@ -63,7 +65,7 @@ html, body {
 }
 .navItem:hover {
   font-size: large;
-  box-shadow: inset 0px 0px 0px 3px black;
+  box-shadow: inset 0px 0px 0px 3px white;
 }
 /********************
     END NAVBAR
@@ -84,6 +86,19 @@ html, body {
   }
 }
 
+
+/********************
+        LINKS
+********************/
+
+/* #links{
+  display: flex;
+  flex-direction: row;
+} */
+
+/********************
+      END LINKS
+********************/
 
 @layer utilities {
   .text-balance {
