@@ -44,9 +44,7 @@ html, body {
   position: absolute;
   top: 0;
   left: -350px;
-  /* background: rgb(29, 31, 41); */
   border-width: 2px;
-  /* box-shadow: inset -10px -10px 20px; */
   border-color: white;
   border-top: 0;
   border-left: 0;
@@ -91,11 +89,19 @@ html, body {
         LINKS
 ********************/
 
-/* #links{
-  display: flex;
-  flex-direction: row;
-} */
+#links{
+  animation-duration: 2.5s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+  from {
+    right: -50px;
+  }
+  to {
+    right: 1px;
+  }
+}
 /********************
       END LINKS
 ********************/
