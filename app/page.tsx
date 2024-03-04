@@ -15,7 +15,7 @@ export default function Home() {
 
       // need to separate these elements out more, make their positioning less dependent on each other. 
       <main className="flex flex-row place-content-center m-auto absolute top-1/3 inset-x-1/4 gap-1">
-        <div id="nametag" className="flex flex-row place-content-center m-auto  top-1/3 inset-x-1/4 gap-1">
+        <div id="nametag" className="flex flex-row place-content-center m-auto  top-1/3 inset-x-1/4 gap-1 tracking-widest">
           <div className="text-white text-8xl m-auto place-self-center">
               <h1>anders <br></br>boyum</h1>
           </div>
