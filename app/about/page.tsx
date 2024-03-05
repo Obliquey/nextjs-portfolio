@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import portrait from "../../public/pics/240216 25 Anders Headshot.jpg";
+import Image from "next/image";
 
 export default function About() {
     // I think I'll want my portrait on one side, and a scrolling text on the other. Do I want to continue making my site not scrollable? Having it be more of a static page? 
@@ -14,8 +15,7 @@ export default function About() {
             <br></br>
             {shortBio2}
             </p>
-            <img src={portrait.src} alt="Portrait of Anders Boyum" 
-                className="max-w-sm shadow-xl rounded"/>
+            <Image src={portrait} alt="Portrait of a Developer" className="max-w-sm shadow-xl rounded" />
         </div>
     )
 };

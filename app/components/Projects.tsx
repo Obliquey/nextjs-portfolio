@@ -16,7 +16,7 @@ export default async function Projects() {
         <>
             {projects.map((item, index) =>{
                     return (
-                        <div className="max-w-52 rounded overflow-hidden shadow-lg bg-white">
+                        <div className="max-w-52 rounded overflow-hidden shadow-lg bg-white" key={index}>
                             <img className="w-full" src={item.img} alt="Something Else" />
                             <div className="px-6 py-4 text-black">
                                 <div className="font-bold text-xl mb-2">{item.name}</div>

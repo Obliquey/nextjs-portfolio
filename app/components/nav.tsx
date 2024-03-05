@@ -13,7 +13,7 @@ export default function Nav() {
         <>
             <div id="navBar" className="flex-row">
                 {navItems.map((item, index) => {
-                    return <Link href={item.path}  className="navItem">{item.name}</Link>;
+                    return <Link href={item.path}  className="navItem" key={index}>{item.name}</Link>;
                 })}
                 <TiChevronRightOutline  className="text-white text-3xl m-auto ml-14 mr-2"/>
             </div>
