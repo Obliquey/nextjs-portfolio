@@ -1,0 +1,2 @@
+'client';
+// will eventually want to create a typewrite function, something that takes a string as input and returns  currentString += currentChar, possibly as a recursive function to be completed when it finishes the string
